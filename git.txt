@@ -1,0 +1,16 @@
+﻿
+// Configuracion
+git config --global user.name "Guillermo Picardi" 		//seteo el nombre
+git config --global user.email "guillermo.picardi@gmail.com" 	//seteo el mail
+git config --global color.ui true  				//seteo los colores 
+git config --global --list  					//Vemos nuestra config
+
+// Primer proyecto
+cd "C:\Users\gpicardi\Desktop\PICARDI\00_DESA\NODE\HELLO\PROYECTO"
+git init	 //inicio el git proyecto
+git status	 // status
+
+touch .gitignore  //Creo el archivo para excluir carpetas y archivos el proyecto
+
+git add -A 	// agrega todo!
+git commit -m "Desc. del cambio"  //hago el commit

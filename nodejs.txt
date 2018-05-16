@@ -1,0 +1,44 @@
+﻿-- Ir al directorio del proyecto
+cd C:\Users\gpicardi\Desktop\Picardi\00_DESA\NODE\DEMO
+
+se ejecuta cada papckage desde el directorio del proyecto
+node app.js
+
+-----------------------------------
+npm -v  //chequelo la version de npm
+npm init  //inicializa nuestro proyecto (hola_express) y nos genera el pkg json del proyecto
+npm install express --save //instala express en el proyecto!
+// se genero una carpeta llamada node modules y ahi estan instaladas las librerias
+npm install body-parser --save
+npm install pug --save   //es viejo: npm install jade --save
+npm install express-session --save
+npm install cookie-session --save
+
+npm install -g nodemon
+
+npm install method-override --save
+
+
+--ahora uso
+nodemon app.js
+
+
+-------------------------------------------------------
+mongod.exe --dbpath "C:\Users\gpicardi\Desktop\Picardi\00_DESA\NODE\DEMO\schema"
+
+npm install mongoose --save
+
+--------------
+git: es para el control ve versiones! ver curso!!!
+git ignore, ignora la carpeta node_modules al reporsitorio!
+--------------
+
+--------------------------------------------------
+https://nodejs.org/dist/latest-v6.x/docs/api/
+node -v
+node archivo.js
+----------------------------------
+TODO: usar PUG u otro en vez de JADE
+hacer  VIEWS
+hacer LAYOUT
+
