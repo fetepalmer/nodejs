@@ -1,5 +1,5 @@
-﻿
-// Configuracion
+﻿// Configuracion
+git help
 git config --global user.name "Guillermo Picardi" 		//seteo el nombre
 git config --global user.email "guillermo.picardi@gmail.com" 	//seteo el mail
 git config --global color.ui true  				//seteo los colores 
@@ -11,6 +11,14 @@ git init	 //inicio el git proyecto
 git status	 // status
 
 touch .gitignore  //Creo el archivo para excluir carpetas y archivos el proyecto
-
-git add -A 	// agrega todo!
-git commit -m "Desc. del cambio"  //hago el commit
+----------------------------------------------------------------------
+git add -A 				// agrega todo!
+git add pepe.js
+git commit -m "Desc. del cambio"	//hago el commit
+git log 				//lista de los commit
+git log > commit.txt 			//lista de los commit en el archivo
+git checkout 36f4d966a0e78c8148dfff8a2053365c33432b51 //viajamos al commit
+git checkout master //viajamos al ultimo commit
+----------------------------------------------------------------------
+git reset --soft	    //no toca nuestro working area. Lo borra del repositorio
+git reset --hard	    //borra todos los cambios de ese commit del working area (notepad++) y del repositorio
