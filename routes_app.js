@@ -73,6 +73,7 @@ router.route("/imagenes/:id")
 //Coleccion de Imagen
 router.route("/imagenes/")
     .get(function(req,res){
+      //filtro las imagenes por el usuario, {creator:res.locals.user._id}
       Imagen.find({},function(err,imagenes){
         if(err){res.redirect("/app");return;}
           res.render("app/imagenes/index",{imagenes:imagenes});
@@ -80,14 +81,19 @@ router.route("/imagenes/")
       });
     })
     .post(function(req,res){
+      console.log(res.locals.user._id);
       var data = {
-        title: req.body.title
+        title: req.body.title,
+        creator: res.locals.user._id
       }
       //Solo guardamos el titulo de la imagen en el json por ahora
       var imagen = new Imagen(data);
       imagen.save(function(err){
         if(!err){
           res.redirect("/app/imagenes/"+imagen._id);
+        }else{
+          console.log(imagen);
+          res.render(err);
         }
       });
 

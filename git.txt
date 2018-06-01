@@ -22,3 +22,6 @@ git checkout master //viajamos al ultimo commit
 ----------------------------------------------------------------------
 git reset --soft	    //no toca nuestro working area. Lo borra del repositorio
 git reset --hard	    //borra todos los cambios de ese commit del working area (notepad++) y del repositorio
+--------------------------------
+git remote add origin https://github.com/fetepalmer/nodejs.git    //Con esto apunto a Github 
+git push -u origin master					  //Subo los archivos a githug. Me tengo que loguear

@@ -61,8 +61,9 @@ var user = new User({
 
 app.post("/sessions",function(req,res){
     User.findOne({email:req.body.email,password:req.body.password},"username email",function(err,user){
-      req.session.user_id = user._id;
-    res.redirect("/app");
+        req.session.user_id = null;
+        if(user!= null) req.session.user_id = user._id;
+        res.redirect("/app");
     });
 });
 

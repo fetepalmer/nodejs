@@ -5,6 +5,7 @@ se ejecuta cada papckage desde el directorio del proyecto
 node app.js
 
 -----------------------------------
+npm i npm to update  // actualizacion del NPM
 npm -v  //chequelo la version de npm
 npm init  //inicializa nuestro proyecto (hola_express) y nos genera el pkg json del proyecto
 npm install express --save //instala express en el proyecto!
@@ -18,11 +19,12 @@ npm install -g nodemon
 
 npm install method-override --save
 
+npm install express-formidable --save
 
 --ahora uso
 nodemon app.js
 
-
+npm i npm //para actualizarlo a la ultima version
 -------------------------------------------------------
 mongod.exe --dbpath "C:\Users\gpicardi\Desktop\Picardi\00_DESA\NODE\DEMO\schema"
 
@@ -37,8 +39,12 @@ git ignore, ignora la carpeta node_modules al reporsitorio!
 https://nodejs.org/dist/latest-v6.x/docs/api/
 node -v
 node archivo.js
-----------------------------------
-TODO: usar PUG u otro en vez de JADE
-hacer  VIEWS
-hacer LAYOUT
+----------------------------------------------------
+TODO: 
+hacer node.js con SQL Server. Reporteador!!
+Tutorial Angula!
+Tutorial Bootstrap
 
+hacer  VIEWS (nodejs)
+hacer LAYOUT (nodejs)
+----------------------------------------------------

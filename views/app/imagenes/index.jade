@@ -11,3 +11,5 @@ block contenido
             a(href="/app/imagenes/#{imagen._id}/edit" class="right-space") Editar
             form(action="/app/imagenes/#{imagen._id}?_method=DELETE" class="link" method="POST")
               input(type="submit", value="Eliminar")
+    div(class="col-xs-12 col-sm-6 text-right")
+      a(href="imagenes/new") Nueva Imagen
